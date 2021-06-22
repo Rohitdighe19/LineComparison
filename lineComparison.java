@@ -11,8 +11,8 @@ public class lineComparison {
       		double y1;
       		double x2;
       		double y2;
-      		
-      		System.out.println("Enter value for x1: ");
+      	
+		System.out.println("Enter value for x1: ");
       		x1 = scanner.nextDouble();
 
 		System.out.println("Enter value for y1: ");
@@ -39,5 +39,14 @@ public class lineComparison {
       		System.out.println("Enter co-ordinates for second line: ");
       		double secondLineLength = object.lineLength();
       		System.out.println("Length of second line is: " +secondLineLength);
+
+		if (firstLineLength==secondLineLength)
+		{
+      			System.out.println("Both the lines are equal.");
+      		}
+	   	else
+	   	{
+      			System.out.println("Both the lines are not equal.");
+		}
 	}
 }
